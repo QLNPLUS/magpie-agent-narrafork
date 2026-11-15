@@ -1,0 +1,9 @@
+# Research material from writing this plugin: magpie and NarraFork sources and
+# docs, downloaded while reading their plugin contracts. Not part of the package.
+research/
+# the attachment folder NarraFork itself writes into the workspace
+.narrafork/
+
+node_modules/
+*.tgz
+.sandbox/

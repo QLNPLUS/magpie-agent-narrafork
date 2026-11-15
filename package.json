@@ -1,0 +1,29 @@
+{
+  "name": "@magpie-community/agent-narrafork",
+  "version": "0.1.0",
+  "description": "NarraFork as a magpie agent: magpie owns the model NarraFork starts on, and NarraFork's model requests go through magpie's gateway",
+  "type": "module",
+  "files": ["narrafork.agent.js", "setup.mjs", "README.md"],
+  "bin": {
+    "agent-narrafork-setup": "./setup.mjs"
+  },
+  "keywords": ["magpie", "magpie-agent", "narrafork", "llm-gateway", "agent"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magpie-community/plugins.git",
+    "directory": "packages/narrafork"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "magpie": {
+    "agent": "./narrafork.agent.js"
+  }
+}
